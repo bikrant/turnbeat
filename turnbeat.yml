@@ -47,6 +47,12 @@ filter:
 # You can enable one or multiple inputs by setting enabled option to true.
 input:
 
+  global:
+  # default intervals
+    tick_interval: 15
+    minor_interval: 60
+    major_interval: 900
+
   syslog:
     enabled: true
     port: 1514
@@ -64,7 +70,10 @@ input:
 
   procfs:
     enabled: true
-    sleep_interval: 60
+
+  packages:
+    enabled: true
+    sleep_interval: 30
 
 # null input, sample code  
   null_0:

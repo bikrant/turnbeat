@@ -1,2 +1,4 @@
 turnbeat
 log-cleaner.log
+pkg/*
+src/*
